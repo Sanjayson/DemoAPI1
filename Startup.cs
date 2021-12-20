@@ -37,11 +37,11 @@ namespace DemoAPI1
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
 
             app.UseEndpoints(endpoints =>
