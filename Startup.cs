@@ -43,9 +43,13 @@ namespace DemoAPI1
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                //endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                 name: "default",
+                 pattern: "{controller=WeatherForecast}/{action=Get}/{id?}");
             });
         }
     }
